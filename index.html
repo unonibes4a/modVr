@@ -103,7 +103,7 @@ let pathvideos='https://unonibes4a.github.io/temasbrochas/';
             const planeWidth = 3;
             const planeHeight = planeWidth / aspectRatio;
 
-            videoPlane = BABYLON.MeshBuilder.CreatePlane("videoPlane", {width: planeWidth, height: planeHeight}, scene);
+            videoPlane = BABYLON.MeshBuilder.CreatePlane("videoPlane", {width: planeWidth, height: planeHeight*0.8}, scene);
             videoPlane.material = videoMaterial;
            // videoPlane.scaling = new BABYLON.Vector3(1.14, 1, 1);
             const env = scene.createDefaultEnvironment({
