@@ -100,12 +100,12 @@ let pathvideos='https://unonibes4a.github.io/temasbrochas/';
             videoMaterial.emissiveColor = new BABYLON.Color3.White();
 
             const aspectRatio = engine.getAspectRatio(camera);
-            const planeWidth = 3.3;
+            const planeWidth = 3;
             const planeHeight = planeWidth / aspectRatio;
 
             videoPlane = BABYLON.MeshBuilder.CreatePlane("videoPlane", {width: planeWidth, height: planeHeight}, scene);
             videoPlane.material = videoMaterial;
-            videoPlane.scaling = new BABYLON.Vector3(1.14, 1, 1);
+           // videoPlane.scaling = new BABYLON.Vector3(1.14, 1, 1);
             const env = scene.createDefaultEnvironment({
     skyboxColor: new BABYLON.Color3(0.00, 0.0, 0.0)   
 });
